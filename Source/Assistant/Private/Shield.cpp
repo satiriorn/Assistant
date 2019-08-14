@@ -11,7 +11,6 @@ AShield::AShield(const FObjectInitializer& ObjectInitializer)
 	ConstructorHelpers::FObjectFinder<UStaticMesh>mesh(TEXT("/Game/ModularRPGHeroesPolyart/Meshes/Weapons/Shield01SM.Shield01SM"));
 	Mesh = ObjectInitializer.CreateDefaultSubobject<UStaticMeshComponent>(this,TEXT("Mesh"));
 	Mesh->SetStaticMesh(mesh.Object);
-	
 	RootComponent = Mesh;
 	
 	PrimaryActorTick.bStartWithTickEnabled = true;

@@ -142,22 +142,6 @@ void ABunAssistant::GetSword()
 	StateMelee = false;
 }
 
-void ABunAssistant::CreateWidget(){
-	
-	/*if (WidgetBP){
-		//GameOver = CreateWidget<UUserWidget>(GetWorld(), WidgetBP);
-		if (!GameOver->GetIsVisible())
-		{
-			GameOver->AddToViewport();
-		}        
-	}*/
-		//static ConstructorHelpers::FClassFinder<UUserWidget>Gameover(TEXT("/Game/Blueprints/Widgets/WB_GameOver"));
-		//Widget=Gameover.Class;
-		//GameOver = CreateWidget<Widget>(GetWorld(), Widget::StaticClass());
-		//GameOver->AddToViewport(); // Add it to the viewport so the Construct() method in the UUserWidget:: is run.
-		//GameOver->SetVisibility(ESlateVisibility::Hidden); // Set it to hidden so its not open on spawn.
-
-}
 void ABunAssistant::GetState()
 {
 	if(EnableZoneWeapon)

@@ -9,7 +9,7 @@
 #include "Shield.generated.h"
 
 UCLASS()
-class FALLANDCONTINUE_API AShield : public AActor
+class AShield : public AActor
 {
 	GENERATED_BODY()
 	

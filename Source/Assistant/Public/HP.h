@@ -8,7 +8,7 @@
 
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class FALLANDCONTINUE_API UHP : public UActorComponent
+class UHP : public UActorComponent
 {
 	GENERATED_BODY()
 

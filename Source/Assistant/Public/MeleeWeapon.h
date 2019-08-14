@@ -11,7 +11,7 @@
 
 
 UCLASS()
-class FALLANDCONTINUE_API AMeleeWeapon : public AActor
+class AMeleeWeapon : public AActor
 {
 	GENERATED_BODY()
 	
