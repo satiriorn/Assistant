@@ -13,5 +13,6 @@ UCLASS()
 class ASSISTANT_API AAssistantGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
-	
+public:
+	AAssistantGameModeBase(const FObjectInitializer& ObjectInitializer);
 };

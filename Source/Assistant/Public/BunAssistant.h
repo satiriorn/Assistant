@@ -15,7 +15,13 @@ UCLASS(config = Game)
 class ABunAssistant : public ACharacter
 {
 	GENERATED_BODY()
+	
+	static FORCEINLINE USkeletalMesh* LoadMeshFromPath(const FName& Path)
+	{
+		if(Path == NAME_None) return NULL;
 
+		return LoadObjFromPath<USkeletalMesh>(Path);
+	}
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 		class UCameraComponent* SideViewCameraComponent;
@@ -191,6 +197,7 @@ public:
 	bool Attack;
 	
 	bool Dead;
+	
 	FORCEINLINE class UCameraComponent* GetSideViewCameraComponent() const { return SideViewCameraComponent; }
 	
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
