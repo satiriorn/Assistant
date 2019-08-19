@@ -16,13 +16,6 @@ class ABunAssistant : public ACharacter
 {
 	GENERATED_BODY()
 	
-	static FORCEINLINE USkeletalMesh* LoadMeshFromPath(const FName& Path)
-	{
-		if(Path == NAME_None) return NULL;
-
-		return LoadObjFromPath<USkeletalMesh>(Path);
-	}
-
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 		class UCameraComponent* SideViewCameraComponent;
 

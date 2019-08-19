@@ -81,6 +81,7 @@ ABunAssistant::ABunAssistant()
 	static ConstructorHelpers::FObjectFinder<UAnimSequence>NormalAttacks(TEXT("/Game/ModularRPGHeroesPolyart/Animations/SwordAndShieldStance/NormalAttack02_SwordShieldAnim.NormalAttack02_SwordShieldAnim"));
 	static ConstructorHelpers::FObjectFinder<UAnimSequence>Slide(TEXT("/Game/ModularRPGHeroesPolyart/Animations/SwordAndShieldStance/Slide_SwordShieldAnim.Slide_SwordShieldAnim"));
 	static ConstructorHelpers::FObjectFinder<UAnimSequence>TOPHIT(TEXT("/Game/ModularRPGHeroesPolyart/Animations/DoubleSwordStance/Combo03_DoubleSwordAnim.Combo03_DoubleSwordAnim"));
+	
 	JumpAnimation =JumpAnim.Object;
 	RunAnimation = RunAnim.Object;
 	RunWoundedAnimation = RunwoundedAnim.Object;
